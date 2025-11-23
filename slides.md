@@ -215,7 +215,7 @@ transition: slide-left
     v-motion
     :initial="{ opacity: 0, x: 50 }"
     :enter="{ opacity: 1, x: 0 }"
-    src="https://www.researchgate.net/publication/245349861/figure/fig1/AS:466436377321472@1488218506299/PEM-electrolyzer-experimental-setup.png" 
+    src="https://telegraph.ttwwjj.ddns-ip.net/file/AgACAgUAAyEGAAShY8_eAAOZaSKru18kcVe7Ugjb1lCJ5tx2AAHjAAK2C2sb-AwZVTScd0PSrK8zAQADAgADeQADNgQ.png" 
     class="rounded-lg bg-white p-2"
   />
   <div class="text-center text-xs opacity-50 mt-2">PEM 实验装置示意图</div>
