@@ -1,12 +1,14 @@
 {
   "name": "hydrogen-energy",
   "type": "module",
-  "private": true,
+  "private": "true",
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export",
-    "deploy:cf": "npm run build && npx wrangler pages deploy"
+    "deploy:cf": "npm run build && npx wrangler pages deploy",
+    "deploy:netlify": "npm run build && netlify deploy",
+    "deploy:vercel": "npm run build && vercel --prod"
   },
   "dependencies": {
     "@slidev/cli": "^52.9.1",
