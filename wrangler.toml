@@ -1,3 +1,16 @@
-name = "hydrogen-energy"
-compatibility_date = "2024-11-24"
-pages_build_output_dir = "./dist"
+[build]
+publish = "dist"
+command = "npm run build"
+
+[build.environment]
+NODE_VERSION = "20"
+
+[[redirects]]
+from = "/.well-known/*"
+to = "/.well-known/:splat"
+status = 200
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
