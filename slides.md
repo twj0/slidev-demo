@@ -5,7 +5,8 @@ title: 氢气制取技术：产业与学术前沿
 info: |
   ## 氢气制取技术：产业与学术前沿
   面向可再生能源概论课程
-class: text-center
+class: text-center text-slate-100
+colorSchema: dark
 highlighter: shiki
 drawings:
   persist: false
@@ -14,13 +15,17 @@ css: unocss
 mdc: true
 ---
 
+<div class="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-br from-slate-950 via-slate-900 to-black"></div>
+<div class="pointer-events-none fixed -top-40 -right-24 h-72 w-72 bg-sky-500/40 blur-3xl rounded-full mix-blend-screen animate-pulse"></div>
+<div class="pointer-events-none fixed -bottom-40 -left-24 h-72 w-72 bg-emerald-400/30 blur-3xl rounded-full mix-blend-screen animate-pulse"></div>
+
 # 氢气制取技术：产业与学术前沿
 
-<div class="text-2xl opacity-80 mt-4">
+<div class="text-2xl opacity-90 mt-4 text-slate-100 drop-shadow-xl tracking-wide">
 面向可再生能源概论课程
 </div>
 
-<div class="abs-br m-6 flex gap-2">
+<div class="abs-br m-6 flex gap-2 text-slate-300">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
