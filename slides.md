@@ -120,8 +120,174 @@ transition: view-transition
 </div>
 
 ---
+layout: center
+transition: slide-left
+class: text-left
+---
+
+# 氢气的制取路线总览
+## From Fossil to Renewable
+
+<v-clicks>
+
+- **化石能源制氢**  
+  - 蒸汽甲烷重整 (SMR)  
+  - 煤气化 / 焦炉煤气等工业副产氢  
+- **电解水制氢**  
+  - 使用可再生电力 (风、光、水电等) 的 ALK、PEM、AEM、SOEC 等技术  
+- **生物质与生物制氢**  
+  - 生物质气化/重整、暗发酵、光合微生物产氢  
+- **新兴路线**  
+  - 光电化学 (PEC)、光催化分解水等
+
+</v-clicks>
+
+---
+layout: two-cols
+transition: slide-left
+class: text-left
+---
+
+# 蒸汽甲烷重整 (SMR)
+## 当前占比最高的制氢方式
+
+<v-clicks>
+
+- **反应路径**  
+  - 主反应: $CH_4 + H_2O \rightleftharpoons CO + 3H_2$ (800–900°C, Ni 催化剂)  
+  - 变换反应: $CO + H_2O \rightleftharpoons CO_2 + H_2$  
+- **工艺特点**  
+  - 以天然气为原料，流程成熟、装置规模可达数十万 Nm³/h。  
+  - 热效率可达 70–80%，制氢成本通常低于电解水。  
+  - 工艺集成: 需要高温炉管、蒸汽过热器和变换/净化单元 (PSA)。  
+- **碳排放画像**  
+  - 传统 SMR 属于 **灰氢**，CO₂ 排放约 9–10 kg / kg H₂。  
+  - 若叠加 CCUS，可转化为 **蓝氢**，捕集率 >90% 时碳强度显著降低。
+
+</v-clicks>
+
+::right::
+
+<div class="mt-6 text-xs opacity-70">
+  资料来源：IEA Global Hydrogen Review、典型天然气制氢装置公开数据
+</div>
+
+<div class="mt-4">
+  <img 
+    src="https://www.researchgate.net/publication/358087280/figure/fig2/AS:1116933143433216@1643309021178/Simplified-process-flow-diagram-of-steam-methane-reforming-with-carbon-capture-and.png"
+    class="rounded-lg shadow-lg border border-gray-500/20 bg-white p-1"
+  />
+  <div class="text-center text-xs opacity-50 mt-2">
+    蒸汽甲烷重整 + CCUS 工艺流程简图 (SMR-CCS，ResearchGate 图示)
+  </div>
+  <div class="mt-3 text-xs opacity-70 leading-relaxed">
+    课堂练习：假设整体反应为 $CH_4 + 2H_2O \\rightarrow CO_2 + 4H_2$，推导每 kg H₂ 理论 CO₂ 生成量，
+    并与工程经验值 9–10 kg CO₂/kg H₂ 比较差异。
+  </div>
+</div>
+
+---
+layout: two-cols
+transition: slide-left
+class: text-left
+---
+
+# 煤气化与工业副产氢
+
+<v-clicks>
+
+- **煤气化制氢**  
+  - 典型反应: $C + H_2O \rightarrow CO + H_2$、$C + O_2 \rightarrow CO_2$ (部分氧化)。  
+  - 通过变换反应与气体净化得到富氢合成气。  
+  - 适合煤资源丰富地区，制氢成本较低但碳排放强度高。  
+- **工业副产氢**  
+  - 氯碱工业: 电解食盐水产生的副产氢。  
+  - 焦化/炼钢: 焦炉煤气、高炉煤气经分离提纯得到氢气。  
+  - 甲醇、氨合成: 合成气装置中可回收富氢尾气。  
+- **角色定位**  
+  - 短期内为化工园区、钢铁基地提供就地低成本氢源。  
+  - 若叠加碳捕集与封存 (CCS)，可在过渡期为低碳氢供应做“托底”。  
+
+</v-clicks>
+
+::right::
+
+<div class="mt-6 text-xs opacity-70">
+  关键词：IGCC、一体化煤气化联合循环、CCUS in coal-based hydrogen
+</div>
+
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop
+transition: slide-left
+class: text-left
+---
+
+# 电解水制氢：通往绿氢的主干道
+
+<v-clicks>
+
+- **基本原理**  
+  - 总反应: $2H_2O \rightarrow 2H_2 + O_2$，理论电压 1.23 V。  
+  - 实际运行电压 1.8–2.2 V，对应电耗约 50–55 kWh/kg H₂。  
+- **工艺路线**  
+  - 低温电解: ALK / PEM / AEM (前文技术全景图中三大体系)。  
+  - 高温电解 (SOEC): 利用 700–850°C 余热降低电能消耗。  
+- **与可再生能源耦合**  
+  - 风/光电输出波动大，要求制氢装置具备宽负荷、快速启停能力。  
+  - ALK 更适合稳态运行，PEM/AEM 则更适配波动电源。  
+- **系统视角**  
+  - 需要同时考虑：电价、利用小时数、电解槽 CAPEX/寿命、氧气副产价值。  
+  - 典型绿氢项目 LCOH 目标：2030 年降至 ~$2–3/kg H₂。  
+- **简化能耗估算 (示例)**  
+  - 以 2.0 V 运行、法拉第效率 100% 计，1 kg H₂ 需电能约 **53–55 kWh**。  
+  - 以上限热值 $LHV \\approx 33.3\\,\\text{kWh/kg}$ 计，电解效率约为 **60–65%**。  
+  - 课堂可要求学生按 1.8/2.2 V 等不同电压重新计算能耗与效率。  
+
+</v-clicks>
+
+---
+layout: two-cols
+transition: slide-left
+class: text-left
+---
+
+# 生物质与生物制氢
+
+<v-clicks>
+
+- **生物质热化学制氢**  
+  - 生物质气化/快热解制取含 H₂ 合成气，再经变换/分离得到氢气。  
+  - 若原料来自可持续林业/农业残余，可实现近零甚至负排放 (BECCS)。  
+- **生物制氢 (Biological Hydrogen)**  
+  - 暗发酵：利用厌氧菌分解糖类产生氢气，多与沼气工程耦合。  
+  - 光合制氢：藻类、蓝细菌在特定条件下通过氢化酶产生氢气。  
+- **瓶颈与前沿**  
+  - 转化效率偏低、过程复杂、对环境条件敏感。  
+  - 目前多处于实验室与示范阶段，更适合作为教学和科研案例。  
+- **与新兴路线的衔接**  
+  - PEC、光催化分解水可视作“无机版光合作用”，在后续“学术前沿”部分将进一步展开。  
+
+</v-clicks>
+
+::right::
+
+<div class="mt-4">
+  <img 
+    src="https://www.researchgate.net/publication/372518778/figure/fig2/AS:11431281398293297@1745525426947/Process-flow-diagram-of-biomass-gasification-for-pure-hydrogen-production_Q320.jpg"
+    class="rounded-lg shadow-lg border border-gray-500/20 bg-white p-1"
+  />
+  <div class="text-center text-xs opacity-50 mt-2">
+    生物质气化制氢工艺流程示意 (ResearchGate 图示)
+  </div>
+  <div class="text-center text-xs opacity-70 mt-1">
+    可作为课后延伸阅读主题：生物质氢能与农业废弃物资源化与能效分析。
+  </div>
+</div>
+
+---
 layout: cover
-background: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop
+background: https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop
 class: text-center
 transition: slide-up
 ---

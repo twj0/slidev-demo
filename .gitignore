@@ -6,3 +6,4 @@ dist
 .remote-assets
 components.d.ts
 pages/imported-slides.md
+slides-export.pptx
