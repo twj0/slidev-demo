@@ -11,11 +11,13 @@
       </span>
       
       <!-- Dot/Bar -->
-      <div class="w-1.5 h-1.5 rounded-full transition-all duration-300"
+      <div class="relative z-10 w-1.5 h-1.5 rounded-full transition-all duration-300"
            :class="getDotClass(index)"></div>
            
-      <!-- Connecting Line (visual only, maybe pseudo-element better but this is simple) -->
-      <!-- <div v-if="index < topics.length - 1" class="absolute right-[5px] top-[14px] w-[1px] h-[12px] bg-white/10 -z-10"></div> -->
+      <!-- Connecting Line -->
+      <div v-if="index < topics.length - 1" 
+           class="absolute right-[2px] top-[10px] w-[1px] h-[24px] bg-white/20 -z-0">
+      </div>
     </div>
   </div>
 </template>
@@ -43,8 +45,8 @@ const currentIndex = computed(() => topics.findIndex(t => t.key === currentTopic
 function getItemClass(index: number) {
   if (currentIndex.value === -1) return 'opacity-0' 
   if (index === currentIndex.value) return 'opacity-100 scale-105'
-  if (index < currentIndex.value) return 'opacity-40'
-  return 'opacity-20'
+  // Keep past items visible but dimmed
+  return 'opacity-60'
 }
 
 function getLabelClass(index: number) {
@@ -54,7 +56,7 @@ function getLabelClass(index: number) {
 
 function getDotClass(index: number) {
   if (index === currentIndex.value) return 'bg-teal-400 w-2 h-2 shadow-[0_0_10px_rgba(45,212,191,0.8)]'
-  if (index < currentIndex.value) return 'bg-white'
-  return 'bg-white/50'
+  if (index < currentIndex.value) return 'bg-teal-400/50'
+  return 'bg-white/20'
 }
 </script>
