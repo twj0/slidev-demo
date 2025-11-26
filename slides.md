@@ -25,6 +25,11 @@ mdc: true
 面向可再生能源概论课程
 </div>
 
+<div class="mt-8 text-sm opacity-80 text-slate-200">
+  <p class="mb-2"><span class="font-bold text-teal-400">演讲者：</span>唐玮嘉</p>
+  <p><span class="font-bold text-teal-400">小组成员：</span>巫亮，陈炜豪，周杰，沈琰荃</p>
+</div>
+
 <div class="abs-br m-6 flex gap-2 text-slate-300">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
