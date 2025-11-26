@@ -57,52 +57,12 @@ transition: slide-left
   <span class="font-bold">核心驱动力：</span> 全球已有 40+ 国家发布国家氢能战略。
 </div>
 
----
-layout: center
-transition: slide-left
-class: text-left
-background: https://www.nrel.gov/images/libraries/news/program/2024/20240715-offshore-wind-turbines-offer-path-for-clean-hydrogen-production-84771.jpg?sfvrsn=60d0f078_0
----
-
-# 全球氢能现状（2025）
-
-<v-clicks>
-
-- **年度需求**：约 1 亿吨 H₂，其中**低排放氢**（绿氢 + 蓝氢）占比 < 1%，但 2024 年起保持约 **10%/年增长**。  
-- **生产结构**：约 **75%** 来自化石燃料蒸汽甲烷重整 (SMR)，煤气化约 15%，工业副产氢 < 5%。  
-- **减排缺口**：IEA 预测，为实现净零情景，2030 年需要 **3,700 万吨低排放氢**，而当前项目仅覆盖目标的约三分之一。  
-- **视觉参考**：SMR+CCUS 流程图、电解水装置结构示意和海水电解电极设计等图像，有助于直观理解不同制氢路径在流程与材料上的差异。  
-- **区域差异**：欧盟、日本更依赖进口绿氢与合成燃料，中国、中东等地区则更多利用本地可再生能源与化石资源组合（IEA, IRENA 2025）。  
-
-</v-clicks>
-
-<div class="mt-6 text-xs opacity-60">
-  数据来源：IEA <i>Global Hydrogen Review 2025</i>，IRENA 氢能报告等公开资料
-</div>
- 
----
-layout: center
-transition: slide-left
-class: text-left
----
-
-# 化石制氢路径对比
-
-| 路径 | 主要反应 | 典型效率 | CO₂ 排放 (kg/kg H₂) | 成本 ($/kg, 2025) | 全球占比 |
-|------|----------|----------|---------------------|-------------------|----------|
-| SMR 灰氢 | $CH_4 + H_2O \\rightleftharpoons CO + 3H_2$ | 70–85% | **9–12** | 1.5–3 | ~75% |
-| SMR+CCUS 蓝氢 | 同上 + CO₂ 捕集 | 70–80% | **< 2** | 2–4 | ~20% |
-| 煤气化 | $C + H_2O \\rightarrow CO + H_2$ | 60–70% | **15–20** | 1–2 | ~15% |
-| 工业副产氢 | 氯碱、焦炉煤气等 | 80%+ | 视工艺而定 | 0.5–2 | <5% |
-
-<div class="mt-4 text-xs opacity-60">
-  数据综合自 IEA <i>Global Hydrogen Review 2025</i> 及相关综述，仅供定量比较参考。传统化石制氢占当前供应绝大部分，后续报告将重点聚焦电解水及其前沿技术路线。
-</div>
 
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?q=80&w=2070&auto=format&fit=crop
+image: https://www.researchgate.net/publication/351301827/figure/fig1/AS:1024814378668035@1621346196464/Water-electrolysis-principle-Two-electrodes-are-placed-in-the-electrolyte-solution.png
 transition: slide-left
+topic: intro
 class: text-left
 ---
 
@@ -119,6 +79,7 @@ class: text-left
 
 ---
 layout: two-cols
+topic: alk
 transition: slide-left
 ---
 
@@ -152,6 +113,7 @@ transition: slide-left
 ---
 layout: image-left
 image: https://nickelgreen.com/wp-content/uploads/2024/01/AWE-hydrogen-production.jpg
+topic: alk
 transition: slide-left
 ---
 
@@ -178,6 +140,7 @@ transition: slide-left
 
 ---
 layout: two-cols
+topic: pem
 transition: slide-left
 background: https://www.researchgate.net/publication/339946556/figure/fig1/AS:869574543147008@1584334135629/Experimental-setup-the-high-pressure-characterization-of-PEM-electrolyzer-stack.jpg
 ---
@@ -210,6 +173,7 @@ background: https://www.researchgate.net/publication/339946556/figure/fig1/AS:86
 </div>
 
 ---
+topic: pem
 transition: fade-out
 ---
 
@@ -245,67 +209,13 @@ transition: fade-out
   </div>
 </div>
 
----
-layout: center
-transition: view-transition
----
 
-# 典型案例研究
 
-<div class="grid grid-cols-2 gap-12 mt-8 w-full max-w-5xl">
-
-<div class="relative group cursor-pointer">
-  <div class="absolute inset-0 bg-blue-500/20 blur-xl group-hover:bg-blue-500/30 transition"></div>
-  <div class="relative bg-black/40 p-6 rounded-xl border border-blue-500/50 h-full">
-    <h3 class="text-xl font-bold mb-2">🇯🇵 Fukushima FH2R</h3>
-    <div class="text-blue-400 text-sm mb-4">10 MW ALK 系统</div>
-    <ul class="text-sm list-disc pl-4 space-y-2 opacity-80">
-      <li>全球最大级可再生能源制氢项目</li>
-      <li>利用 AI 预测模型优化运行</li>
-      <li>验证了 ALK 在波动电源下的适应性</li>
-    </ul>
-  </div>
-</div>
-
-<div class="relative group cursor-pointer">
-  <div class="absolute inset-0 bg-green-500/20 blur-xl group-hover:bg-green-500/30 transition"></div>
-  <div class="relative bg-black/40 p-6 rounded-xl border border-green-500/50 h-full">
-    <h3 class="text-xl font-bold mb-2">🇪🇺 Shell Refhyne</h3>
-    <div class="text-green-400 text-sm mb-4">10 MW PEM 系统</div>
-    <ul class="text-sm list-disc pl-4 space-y-2 opacity-80">
-      <li>位于德国莱茵兰炼油厂</li>
-      <li>提供电网频率响应服务</li>
-      <li>计划扩建至 100 MW</li>
-    </ul>
-  </div>
-</div>
-
-</div>
-
----
-transition: slide-up
----
-
-# 技术参数深度对比
-
-| 参数 | 碱性电解 (ALK) | 质子交换膜 (PEM) | 阴离子交换膜 (AEM) |
-| :--- | :---: | :---: | :---: |
-| **电解质** | 液体 KOH | 固态聚合物 | 固态聚合物 |
-| **工作温度** | 60-80°C | 50-80°C | 50-60°C |
-| **电流密度** | 0.4-0.6 A/cm² | **2.0-3.0 A/cm²** | 0.5-2.0 A/cm² |
-| **负载范围** | 15-100% | **0-160%** | 5-100% |
-| **冷启动** | ~50 分钟 | **< 5 分钟** | ~10 分钟 |
-| **关键材料** | 镍, 不锈钢 | 铂, 铱, 钛 | 镍, 铁, 钢 |
-| **系统寿命** | > 80,000 h | > 50,000 h | < 5,000 h (目前) |
-| **CAPEX** | **$** | **$$$** | **$** (潜力) |
-
-<div v-click class="mt-6 text-center text-sm opacity-70">
-  数据来源: IEA Global Hydrogen Review & IRENA Reports
-</div>
 
 ---
 layout: image-right
 image: https://www.researchgate.net/publication/375489108/figure/fig1/AS:11431281204076525@1699575640514/Schematic-of-anion-exchange-membrane-AEM-water-electrolyzer-membrane-electrode.jpg
+topic: aem
 transition: slide-left
 ---
 
@@ -315,78 +225,87 @@ transition: slide-left
 
 <v-clicks>
 
-- **核心愿景**: 使用非贵金属催化剂 (Ni, Fe) 实现 PEM 级的电流密度。
+- **核心愿景**: 使用非贵金属催化剂 (Ni, Fe) 实现 PEM 级的电流密度 [3]。
 - **技术难点**: 
   - 阴离子膜 (AEM) 的化学稳定性差。
   - 离子电导率低于质子膜。
 - **最新突破**:
-  - *Nature Energy (2023)*: 开发了新型聚合物骨架，在 60°C 下实现 **>1000小时** 稳定运行。
-  - 商业化前夜: Enapter 等公司已推出 kW 级 AEM 模块。
+  - *Nature Energy (2023)*: 开发了新型聚合物骨架，在 60°C 下实现 **>1000小时** 稳定运行 [3][16]。
+  - **商业化进程**: Enapter 等公司已推出 MW 级 AEM 模块，目标 LCOH < $2/kg [18]。
 
 </v-clicks>
 
 ---
 layout: two-cols
+topic: seawater
 transition: fade-out
 background: https://assets.newatlas.com/dims4/default/13aba13/2147483647/strip/true/crop/1425x748+0+160/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F2a%2Fab%2F7631d2aa427b8c10bc183ff1c2cd%2Fscreenshot-2022-12-16-at-1.21.02%20pm.png&na.image_optimisation=0
 ---
 
 # 海水直接电解
 
-**向海洋要氢**
+**向海洋要氢：解决淡水依赖**
 
 <v-clicks>
 
-- **背景**: 传统电解消耗大量高纯水 (9kg 水 / 1kg 氢)。
-- **痛点**: 海水中复杂的离子成分 (Cl⁻, Mg²⁺, Ca²⁺)。
-- **氯腐蚀**: 阳极析氯反应 (CER) 与析氧反应 (OER) 竞争，腐蚀电极。
+- **背景**: 传统电解消耗大量高纯水 (9kg 水 / 1kg 氢)，海水淡化增加成本与复杂性。
+- **挑战**: 海水中复杂的离子成分 (Cl⁻, Mg²⁺, Ca²⁺) 导致阳极腐蚀与结垢 [4]。
+- **策略**:
+  - **物理阻隔**: 利用疏水膜只允许水蒸气通过 (膜蒸馏耦合)。
+  - **化学阻隔**: 在电极表面构建抗腐蚀层 (如 NiFe-LDH) [10]。
 
 </v-clicks>
 
 ::right::
 
 <div class="ml-4 mt-8">
-  <h3 class="text-lg font-bold mb-2">主要策略</h3>
-  <ul class="space-y-4">
-    <li v-click class="bg-white/5 p-3 rounded">
-      <span class="text-blue-400 font-bold">物理阻隔</span>
-      <p class="text-sm opacity-80">利用疏水膜只允许水蒸气通过 (膜蒸馏耦合)。</p>
-    </li>
-    <li v-click class="bg-white/5 p-3 rounded">
-      <span class="text-green-400 font-bold">化学阻隔</span>
-      <p class="text-sm opacity-80">在电极表面构建抗腐蚀层 (如 NiFe-LDH)。</p>
-    </li>
-  </ul>
+  <img 
+    src="https://scx1.b-cdn.net/csz/news/800a/2017/3-columbiaengi.jpg" 
+    class="rounded-lg shadow-lg border border-white/20"
+  />
+  <div class="text-center text-xs opacity-60 mt-2">
+    漂浮式海水电解装置示意图 [4]
+  </div>
 </div>
 
 ---
 layout: center
+topic: seawater
 transition: view-transition
 ---
 
 # 突破性机制：相变迁移
 
-*Nature (2022/2024) - 谢和平院士团队 / 斯坦福大学*
+*Nature (2022) / Joule (2022)*
 
-<div class="flex justify-center my-6">
+<div class="flex justify-center my-4">
   <img 
     src="https://en.szu.edu.cn/__local/B/A5/85/7CAD345EA2B4099CACFB28A300C_FAE36121_2AA24.png?e=.png" 
-    class="h-60 rounded-lg shadow-2xl"
+    class="h-52 rounded-lg shadow-2xl border border-white/10"
   />
 </div>
 
-<v-clicks>
+<div class="flex justify-center mb-4">
+  <div class="grid grid-cols-2 gap-4 w-3/4">
+      <div class="bg-white/5 p-3 rounded-xl border border-white/10">
+        <h3 class="text-base font-bold text-blue-400 mb-1">原理</h3>
+        <p class="text-xs opacity-90">利用水蒸气分压差，海水自然蒸发穿过疏水膜，凝结为纯水后电解。</p>
+      </div>
+      <div class="bg-white/5 p-3 rounded-xl border border-white/10">
+        <h3 class="text-base font-bold text-green-400 mb-1">优势</h3>
+        <p class="text-xs opacity-90">彻底隔绝杂质离子，实现 **>3000小时** 稳定运行，无需额外淡化能耗 [4]。</p>
+      </div>
+  </div>
+</div>
 
-1. **原理**: 利用水蒸气分压差。
-2. **过程**: 海水 -> 蒸发 -> 穿过疏水膜 -> 凝结为纯水 -> 电解。
-3. **效果**: 彻底隔绝了杂质离子，实现了 **>3000小时** 的稳定运行。
-4. **意义**: 使得“海上风电+海水制氢”成为现实，无需额外的海水淡化设备。
-
-</v-clicks>
+<div class="text-center text-sm opacity-60 mt-4">
+  这一机制使得“海上风电+海水制氢”成为现实，构建深远海能源岛 [5]。
+</div>
 
 ---
 layout: image-left
 image: https://www.offshorewind.biz/wp-content/uploads/sites/2/2023/06/Lhyfe_Sealhyfe-offshore-hydrogen-production-platform-and-Floatgen-floating-wind-turbine.jpg
+topic: offshore
 transition: slide-left
 ---
 
@@ -396,174 +315,113 @@ transition: slide-left
 
 <v-clicks>
 
-- **资源**: 远海风速更高、更稳定 (>10 m/s)。
-- **输送**: 
-  - 电力传输 (HVDC): 昂贵。
-  - **氢气管道**: 距离 >100km 时成本更低。
-- **挑战**:
-  - 极端环境 (盐雾、风浪)。
-  - 平台稳定性 (漂浮式风机耦合)。
-  - 运维成本 (O&M) 是陆上的 3-5 倍。
+- **资源优势**: 远海风速更高 (>10 m/s) 且更稳定，不占用土地资源 [5]。
+- **输送经济性**: 距离 >100km 时，氢气管道输送成本低于高压直流输电 (HVDC)。
+- **示范项目**: 
+  - **Lhyfe Sealhyfe**: 全球首个海上制氢平台，验证了 PEM 在风浪下的稳定性。
+  - **PosHYdon**: 北海海上油气平台改造制氢。
+- **挑战**: 盐雾腐蚀、高昂的运维成本 (O&M 约为陆上的 3-5 倍) [5]。
 
 </v-clicks>
-
-<div v-click class="mt-4 text-xs opacity-60">
-  图: Lhyfe Sealhyfe 离岸制氢平台原型
-</div>
-
----
-transition: fade-out
----
-
-# 前沿探索：光电化学 (PEC)
-
-**人工光合作用**
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
-  <h3 class="text-xl font-bold text-yellow-400 mb-4">一步法制氢</h3>
-  <p class="mb-4">直接利用太阳光驱动半导体催化剂分解水，无需外接电源。</p>
-  
-  <div v-click class="bg-white/5 p-4 rounded-lg">
-    <div class="font-bold">关键指标: STH (Solar-to-Hydrogen)</div>
-    <div class="flex justify-between mt-2 text-sm">
-      <span>当前水平:</span>
-      <span class="text-yellow-400">~10%</span>
-    </div>
-    <div class="flex justify-between mt-1 text-sm">
-      <span>商业化门槛:</span>
-      <span class="text-green-400">>15-20%</span>
-    </div>
-  </div>
-</div>
-
-<div class="flex flex-col justify-center">
-  <div class="relative rounded-xl overflow-hidden bg-slate-900/60">
-    <img 
-      src="https://ooo.0x0.ooo/2023/03/31/21lRS.png" 
-      class="absolute inset-0 w-full h-full object-cover opacity-60"
-    />
-    <div class="relative p-4 backdrop-blur-sm bg-gradient-to-r from-slate-900/80 to-slate-800/40">
-      <h4 class="font-bold">典型 PEC 器件结构</h4>
-      <p class="text-sm mt-2 opacity-90">
-        光阳极/光阴极吸收太阳光产生光生载流子，在电解质中完成水分解反应；常见体系包括金属氧化物、III-V 半导体与钙钛矿叠层等。
-      </p>
-      <p class="text-sm mt-2 opacity-80">
-        当前研究重点在于提高光吸收与催化活性，同时兼顾长期稳定性与低成本封装，使 PEC 有望在分布式“光照即产氢”场景中落地。
-      </p>
-      <p class="text-xs mt-2 opacity-70">
-        图：典型光电化学水分解装置示意。
-      </p>
-    </div>
-  </div>
-</div>
-
-</div>
-
----
-layout: cover
-background: https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop
-class: text-center
-transition: slide-up
----
-
-# 先进制氢工艺总览
-## Advanced Hydrogen Production
-
-<v-clicks>
-
- - **高端电解水体系 (ALK / PEM / AEM / SOEC)**：从常温到高温电解，目标是把能耗压到 30–55 kWh/kg H₂，并在 MW–GW 级保持高电流密度与长寿命。  
- - **海水直接电解**：利用疏水膜和相变迁移等结构，在电极侧形成“原位淡水层”，抑制 Cl⁻ 腐蚀与结垢，实验室与中试装置已实现 >1000 h 稳定运行。  
- - **光电化学 (PEC) 与光催化**：半导体吸光驱动水分解，当前 STH 约 5–12%，实验室装置接近 10%，商业化通常认为需 >15–20%。  
-
-</v-clicks>
-
-<div class="mt-6 text-xs opacity-60">
-  数据来源：IEA、IRENA 相关氢能技术报告及多篇电解水/PEC/生物质制氢综述。
-</div>
 
 ---
 layout: two-cols
-transition: slide-left
-class: text-left
----
-
-# 世界领军制氢项目与企业
-
-<v-clicks>
-
- - **日本 Fukushima FH2R (ALK)**：10 MW 级碱性电解槽 + 20 MW 光伏与储能，通过 AI 调度验证 ALK 在波动电源下的长期稳定运行。  
- - **德国 Shell Refhyne (PEM)**：10 MW PEM 为莱茵兰炼油厂供氢并参与电网调频，规划扩展至 100 MW 级。  
- - **Enapter / EVOLOH + GS E&C (AEM)**：模块化 AEM 从 kW 扩展到 MW，目标是用非贵金属催化剂实现高电流密度和低 CAPEX。  
- - **Lhyfe Sealhyfe 离岸制氢平台**：在漂浮式风机旁布置 1 MW PEM 模块，为未来更大规模“海上制氢岛”积累工程经验。  
-
-</v-clicks>
-
-::right::
-
-<div class="mt-4">
-  <img 
-    src="https://images.unsplash.com/photo-1487875961445-47a00398c267?q=80&w=1600&auto=format&fit=crop" 
-    class="rounded-lg shadow-lg border border-white/10"
-  />
-  <div class="text-center text-xs opacity-60 mt-2">
-    绿氢工厂与工业电解槽总装示意（Unsplash 自由图片）
-  </div>
-</div>
-
-<div class="mt-6 text-xs opacity-60">
-  参考：项目公开资料、IEA 与行业报告；EVOLOH + GS E&C 合作新闻，Lhyfe Sealhyfe 官方发布等。
-</div>
-
----
-layout: two-cols
+topic: pec
 transition: fade-out
 background: https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?q=80&w=2070&auto=format&fit=crop
 class: text-left
 ---
 
-# 下一代制氢方向与研发热点
+# 前沿探索：光电化学 (PEC)
+
+**人工光合作用：一步法制氢**
 
 <v-clicks>
 
- - **低铱/无铱 PEM 电解槽**：通过纳米结构与合金设计大幅降低阳极铱用量，目标是在 2–3 A/cm² 下把系统 CAPEX 压到 **300–500 $/kW**。  
- - **高电流密度 AEM 与非贵金属催化剂**：Ni/Fe 等非贵金属体系在 AEM 中已实现 **1–2 A/cm²、>1000 h**，下一步是提升膜稳定性并实现卷对卷制膜与自动化堆栈装配。  
- - **大规模海水电解**：基于相变迁移和多层防护结构，把实验室方案放大到 MW 级，与海上风电、漂浮光伏和海水淡化耦合，构建“海上制氢 + 管道回输”一体化系统。  
- - **光电化学与光催化新体系**：发展稳定的钙钛矿/Si 叠层 PEC 和高效率光催化粉体，并用机器学习 + 高通量计算加速材料筛选，缩短从发现到工程应用的周期。  
+- **原理**: 半导体光电极直接吸收太阳光分解水，无需外接电源。
+- **关键指标**: 太阳能转化氢能效率 (STH)。
+  - 当前水平: ~10% (实验室) [14]。
+  - 商业化门槛: >15-20%。
+- **材料体系**: 
+  - 金属氧化物 ($Fe_2O_3$, $BiVO_4$): 稳定但效率低。
+  - III-V 族半导体 / 钙钛矿: 效率高但易腐蚀/昂贵。
 
 </v-clicks>
 
-  <div class="mt-6 text-xs opacity-60">
-    参考：近年关于 PEM/AEM/海水电解与 PEC 的综述与前沿论文，以及主要设备供应商的技术路线图。
-  </div>
- 
-  ---
-  # 参考文献
+::right::
 
-  <div class="text-xs opacity-70 leading-relaxed columns-2 gap-8">
-
-  1. **IRENA**. (2024). *Global Hydrogen Trade Outlook*.
-  2. **IEA**. (2025). *Global Hydrogen Review 2025*.
-  3. **Nature Energy**. (2023). *Stable anion exchange membranes*.
-  4. **Joule**. (2022). *Direct seawater electrolysis*.
-  5. **NREL**. (2024). *Offshore Wind for Hydrogen*.
-  6. **Springer**. (2025). *Green hydrogen production and deployment*.
-  7. **Energies Media**. (2025). *Hydrogen Energy in 2025*.
-  8. **ScienceDirect**. (2025). *Advancements in green hydrogen production*.
-  9. **Newswise**. (2025). *Recent Progress of Green Hydrogen Production Technology*.
-  10. **PMC**. (2025). *Recent Advances in Green Hydrogen Production by Electrolyzing Water*.
-  11. **Yahoo Finance**. (2025). *2025 Green Hydrogen Market Technology Landscape*.
-  12. **StartUs Insights**. (2024). *Top 10 Hydrogen Trends in 2025*.
-  13. **Airswift**. (2025). *Top US green hydrogen projects for 2025*.
-  14. **ACS Catalysis**. (2024). *Transition metal-based catalysts*.
-  15. **IRENA**. (2025). *Green hydrogen for industrial decarbonisation (Central Asia & South Caucasus)*.
-  16. **Frontiers in Membrane Science and Technology**. (2025). *Grand challenges in anion exchange membrane energy applications*.
-  17. **WIREs Energy and Environment**. (2025). *Advancements in Electrode Development for Water Electrolysis*.
-  18. **Fuel Cells Works**. (2025). *GS E&C Enters Hydrogen Tech Market with EVOLOH AEM Electrolysis*.
- 
+<div class="ml-4 mt-10">
+  <img 
+    src="https://ooo.0x0.ooo/2023/03/31/21lRS.png" 
+    class="rounded-lg shadow-2xl bg-black/40 p-2"
+  />
+  <div class="text-center text-xs opacity-60 mt-2">
+    典型 PEC 器件结构示意图
   </div>
+</div>
+
+---
+layout: center
+topic: future
+transition: slide-up
+background: https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop
+class: text-center
+---
+
+# 全球格局与未来展望
+
+<div class="grid grid-cols-3 gap-6 mt-8 text-left">
+  <div class="bg-black/50 p-4 rounded-lg backdrop-blur-sm">
+    <h3 class="text-xl font-bold text-blue-400 mb-2">规模化</h3>
+    <p class="text-sm opacity-90">2025年全球产能突破 1 Mt/yr，中国占据主导地位 (60%+) [2][11]。</p>
+  </div>
+  <div class="bg-black/50 p-4 rounded-lg backdrop-blur-sm">
+    <h3 class="text-xl font-bold text-green-400 mb-2">成本下降</h3>
+    <p class="text-sm opacity-90">随着电解槽制造自动化，预计 2030 年绿氢成本降至 $2-3/kg [1][6]。</p>
+  </div>
+  <div class="bg-black/50 p-4 rounded-lg backdrop-blur-sm">
+    <h3 class="text-xl font-bold text-purple-400 mb-2">应用拓展</h3>
+    <p class="text-sm opacity-90">从化工脱碳向钢铁冶炼、重卡运输及航运燃料 (氨/甲醇) 延伸 [15]。</p>
+  </div>
+</div>
+
+<div class="mt-12 text-sm opacity-70">
+  "氢能不是唯一的答案，但它是净零排放拼图中不可或缺的一块。" — IEA Global Hydrogen Review 2025
+</div>
+
+---
+layout: center
+transition: fade-out
+class: text-left
+---
+
+# 参考文献
+
+<div class="text-xs opacity-70 leading-relaxed columns-2 gap-8">
+
+1. **IRENA**. (2024). *Global Hydrogen Trade Outlook*.
+2. **IEA**. (2025). *Global Hydrogen Review 2025*.
+3. **Nature Energy**. (2023). *Stable anion exchange membranes*.
+4. **Joule**. (2022). *Direct seawater electrolysis*.
+5. **NREL**. (2024). *Offshore Wind for Hydrogen*.
+6. **Springer**. (2025). *Green hydrogen production and deployment*.
+7. **Energies Media**. (2025). *Hydrogen Energy in 2025*.
+8. **ScienceDirect**. (2025). *Advancements in green hydrogen production*.
+9. **Newswise**. (2025). *Recent Progress of Green Hydrogen Production Technology*.
+10. **PMC**. (2025). *Recent Advances in Green Hydrogen Production by Electrolyzing Water*.
+11. **Yahoo Finance**. (2025). *2025 Green Hydrogen Market Technology Landscape*.
+12. **StartUs Insights**. (2024). *Top 10 Hydrogen Trends in 2025*.
+13. **Airswift**. (2025). *Top US green hydrogen projects for 2025*.
+14. **ACS Catalysis**. (2024). *Transition metal-based catalysts*.
+15. **IRENA**. (2025). *Green hydrogen for industrial decarbonisation (Central Asia & South Caucasus)*.
+16. **Frontiers in Membrane Science and Technology**. (2025). *Grand challenges in anion exchange membrane energy applications*.
+17. **WIREs Energy and Environment**. (2025). *Advancements in Electrode Development for Water Electrolysis*.
+18. **Fuel Cells Works**. (2025). *GS E&C Enters Hydrogen Tech Market with EVOLOH AEM Electrolysis*.
+
+</div>
 
 <div class="absolute bottom-4 right-4 text-xs opacity-30">
-  Powered by Slidev & Antigravity
+  Powered by Slidev
+  <br></br>
+  源代码:https://github.com/twj0/slidev-demo
 </div>
