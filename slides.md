@@ -280,11 +280,11 @@ background: https://assets.newatlas.com/dims4/default/13aba13/2147483647/strip/t
 
 <div class="ml-4 mt-8">
   <img 
-    src="https://scx1.b-cdn.net/csz/news/800a/2017/3-columbiaengi.jpg" 
+    src="https://www.science.org/do/10.1126/science.adh8151/abs/_20230317_NID_seawater.jpg" 
     class="rounded-lg shadow-lg border border-white/20"
   />
   <div class="text-center text-xs opacity-60 mt-2">
-    漂浮式海水电解装置示意图 [4]
+    海水直接电解装置示意图 [4]
   </div>
 </div>
 
