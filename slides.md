@@ -79,44 +79,7 @@ background: https://www.nrel.gov/images/libraries/news/program/2024/20240715-off
 <div class="mt-6 text-xs opacity-60">
   数据来源：IEA <i>Global Hydrogen Review 2025</i>，IRENA 氢能报告等公开资料
 </div>
-
----
-layout: two-cols
-transition: slide-left
-class: text-left
----
-
-# 氢的色彩光谱
-
-<div class="grid grid-cols-3 gap-6 mt-10">
-
-<div v-click class="text-center p-4 bg-gray-100 rounded-xl dark:bg-gray-800">
-  <div class="text-4xl mb-2">🌑</div>
-  <h3 class="text-gray-600 font-bold">灰氢 (Grey)</h3>
-  <p class="text-sm mt-2 opacity-70">化石燃料重整</p>
-  <p class="text-xs mt-1 text-red-500">高碳排放</p>
-</div>
-
-<div v-click class="text-center p-4 bg-blue-50 rounded-xl dark:bg-blue-900/30">
-  <div class="text-4xl mb-2">🔵</div>
-  <h3 class="text-blue-600 font-bold">蓝氢 (Blue)</h3>
-  <p class="text-sm mt-2 opacity-70">化石燃料 + CCUS</p>
-  <p class="text-xs mt-1 text-yellow-500">低碳排放</p>
-</div>
-
-<div v-click class="text-center p-4 bg-green-50 rounded-xl dark:bg-green-900/30 border-2 border-green-500">
-  <div class="text-4xl mb-2">🟢</div>
-  <h3 class="text-green-600 font-bold">绿氢 (Green)</h3>
-  <p class="text-sm mt-2 opacity-70">可再生能源电解水</p>
-  <p class="text-xs mt-1 text-green-500">零碳排放</p>
-</div>
-
-</div>
-
-<div v-click class="mt-8 text-center text-lg font-serif italic">
-  "绿氢是实现 2050 净零排放的终极方案。"
-</div>
-
+ 
 ---
 layout: center
 transition: slide-left
@@ -133,86 +96,12 @@ class: text-left
 | 工业副产氢 | 氯碱、焦炉煤气等 | 80%+ | 视工艺而定 | 0.5–2 | <5% |
 
 <div class="mt-4 text-xs opacity-60">
-  数据综合自 IEA <i>Global Hydrogen Review 2025</i> 及相关综述，仅供定量比较参考。
-</div>
-
----
-layout: two-cols
-transition: slide-left
-class: text-left
----
-
-# 蒸汽甲烷重整 (SMR)
-## 当前占比最高的制氢方式
-
-<v-clicks>
-
-- **反应路径**  
-  - 主反应: $CH_4 + H_2O \rightleftharpoons CO + 3H_2$ (800–900°C, Ni 催化剂)  
-  - 变换反应: $CO + H_2O \rightleftharpoons CO_2 + H_2$  
-- **工艺特点**  
-  - 以天然气为原料，流程成熟、装置规模可达数十万 Nm³/h。  
-  - 热效率可达 70–80%，制氢成本通常低于电解水。  
-  - 工艺集成: 需要高温炉管、蒸汽过热器和变换/净化单元 (PSA)。  
-- **碳排放画像**  
-  - 传统 SMR 属于 **灰氢**，CO₂ 排放约 9–10 kg / kg H₂。  
-  - 若叠加 CCUS，可转化为 **蓝氢**，捕集率 >90% 时碳强度显著降低。
-
-</v-clicks>
-
-::right::
-
-<div class="mt-6 text-xs opacity-70">
-  资料来源：IEA Global Hydrogen Review、典型天然气制氢装置公开数据
-</div>
-
-<div class="mt-4">
-  <img 
-    src="https://www.researchgate.net/publication/358087280/figure/fig2/AS:1116933143433216@1643309021178/Simplified-process-flow-diagram-of-steam-methane-reforming-with-carbon-capture-and.png"
-    class="rounded-lg shadow-lg border border-gray-500/20 bg-white p-1"
-  />
-  <div class="text-center text-xs opacity-50 mt-2">
-    蒸汽甲烷重整 + CCUS 工艺流程简图 (SMR-CCS，ResearchGate 图示)
-  </div>
-  <div class="mt-3 text-xs opacity-70 leading-relaxed">
-    整体反应可近似写为 $CH_4 + 2H_2O \\rightarrow CO_2 + 4H_2$，据此可估算每 kg H₂ 对应的 CO₂ 理论生成量，
-    与工程经验值 9–10 kg CO₂/kg H₂ 基本一致，有助于理解灰氢与蓝氢在生命周期排放上的差别。
-  </div>
-</div>
-
----
-layout: two-cols
-transition: slide-left
-class: text-left
----
-
-# 煤气化与工业副产氢
-
-<v-clicks>
-
-- **煤气化制氢**  
-  - 典型反应: $C + H_2O \rightarrow CO + H_2$、$C + O_2 \rightarrow CO_2$ (部分氧化)。  
-  - 通过变换反应与气体净化得到富氢合成气。  
-  - 适合煤资源丰富地区，制氢成本较低但碳排放强度高。  
-- **工业副产氢**  
-  - 氯碱工业: 电解食盐水产生的副产氢。  
-  - 焦化/炼钢: 焦炉煤气、高炉煤气经分离提纯得到氢气。  
-  - 甲醇、氨合成: 合成气装置中可回收富氢尾气。  
-- **角色定位**  
-  - 短期内为化工园区、钢铁基地提供就地低成本氢源。  
-  - 若叠加碳捕集与封存 (CCS)，可在过渡期为低碳氢供应做“托底”。  
-
-</v-clicks>
-
-::right::
-
-<div class="mt-6 text-xs opacity-70">
-  关键词：IGCC、一体化煤气化联合循环、CCUS in coal-based hydrogen
+  数据综合自 IEA <i>Global Hydrogen Review 2025</i> 及相关综述，仅供定量比较参考。传统化石制氢占当前供应绝大部分，后续报告将重点聚焦电解水及其前沿技术路线。
 </div>
 
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1582719478250-c89dae4dc85b?q=80&w=2070&auto=format&fit=crop
+image: https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?q=80&w=2070&auto=format&fit=crop
 transition: slide-left
 class: text-left
 ---
@@ -221,74 +110,12 @@ class: text-left
 
 <v-clicks>
 
-- **基本原理**  
-  - 总反应: $2H_2O \rightarrow 2H_2 + O_2$，理论电压 1.23 V。  
-  - 实际运行电压 1.8–2.2 V，对应电耗约 50–55 kWh/kg H₂。  
-- **工艺路线**  
-  - 低温电解: ALK / PEM / AEM (前文技术全景图中三大体系)。  
-  - 高温电解 (SOEC): 利用 700–850°C 余热降低电能消耗。  
-- **与可再生能源耦合**  
-  - 风/光电输出波动大，要求制氢装置具备宽负荷、快速启停能力。  
-  - ALK 更适合稳态运行，PEM/AEM 则更适配波动电源。  
-- **系统视角**  
-  - 需要同时考虑：电价、利用小时数、电解槽 CAPEX/寿命、氧气副产价值。  
-  - 典型绿氢项目 LCOH 目标：2030 年降至 ~$2–3/kg H₂。  
-- **简化能耗估算 (示例)**  
-  - 以 2.0 V 运行、法拉第效率 100% 计，1 kg H₂ 需电能约 **53–55 kWh**。  
-  - 以上限热值 $LHV \\approx 33.3\\,\\text{kWh/kg}$ 计，电解效率约为 **60–65%**。  
-  - 不同运行电压下的能耗与效率关系可用同样方法估算，用于评估工艺优化与电价假设对 LCOH 的影响。  
+- **基本原理**：$2H_2O \rightarrow 2H_2 + O_2$，实际运行电压通常 1.8–2.2 V。  
+- **主要路线**：低温 ALK / PEM / AEM 与高温 SOEC 两大类，可通过选择工艺在效率与成本之间权衡。  
+- **与风光耦合**：要求制氢系统具备宽负荷、快速启停能力，PEM/AEM 更适配高波动、快速调节场景。  
+- **能耗与效率示例**：以 2.0 V 运行时，1 kg H₂ 约需 53–55 kWh 电能，对应电解效率约 60–65%。  
 
 </v-clicks>
-
----
-layout: two-cols
-transition: slide-left
-class: text-left
----
-
-# 生物质与生物制氢
-
-<v-clicks>
-
-- **生物质热化学制氢**  
-  - 生物质气化/快热解制取含 H₂ 合成气，再经变换/分离得到氢气。  
-  - 若原料来自可持续林业/农业残余，可实现近零甚至负排放 (BECCS)。  
-- **生物制氢 (Biological Hydrogen)**  
-  - 暗发酵：利用厌氧菌分解糖类产生氢气，多与沼气工程耦合。  
-  - 光合制氢：藻类、蓝细菌在特定条件下通过氢化酶产生氢气。  
-- **瓶颈与前沿**  
-  - 转化效率偏低、过程复杂、对环境条件敏感。  
-  - 目前多处于实验室与示范阶段，更适合作为教学和科研案例。  
-- **与新兴路线的衔接**  
-  - PEC、光催化分解水可视作“无机版光合作用”，在后续“学术前沿”部分将进一步展开。  
-
-</v-clicks>
-
-::right::
-
-<div class="mt-4">
-  <img 
-    src="https://www.researchgate.net/publication/372518778/figure/fig2/AS:11431281398293297@1745525426947/Process-flow-diagram-of-biomass-gasification-for-pure-hydrogen-production_Q320.jpg"
-    class="rounded-lg shadow-lg border border-gray-500/20 bg-white p-1"
-  />
-  <div class="text-center text-xs opacity-50 mt-2">
-    生物质气化制氢工艺流程示意 (ResearchGate 图示)
-  </div>
-  <div class="text-center text-xs opacity-70 mt-1">
-    生物质氢能常与农业废弃物资源化和区域能源系统规划结合，是当前跨学科研究的一个重要方向。
-  </div>
-</div>
-
----
-layout: cover
-background: https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop
-class: text-center
-transition: slide-up
----
-
-# 产业前沿
-## Industrial Frontiers
-成熟度与规模化部署
 
 ---
 layout: two-cols
@@ -477,17 +304,6 @@ transition: slide-up
 </div>
 
 ---
-layout: cover
-background: https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop
-class: text-center
-transition: slide-up
----
-
-# 学术前沿
-## Academic Innovations
-新材料、新工艺与海洋应用
-
----
 layout: image-right
 image: https://www.researchgate.net/publication/375489108/figure/fig1/AS:11431281204076525@1699575640514/Schematic-of-anion-exchange-membrane-AEM-water-electrolyzer-membrane-electrode.jpg
 transition: slide-left
@@ -623,13 +439,25 @@ transition: fade-out
 </div>
 
 <div class="flex flex-col justify-center">
-  <div v-click class="p-4 border-l-2 border-purple-500 bg-purple-500/10">
-    <h4 class="font-bold">AI 加速材料发现</h4>
-    <p class="text-sm mt-2 opacity-80">
-      利用机器学习 (ML) 和密度泛函理论 (DFT) 筛选数万种钙钛矿材料，寻找最佳带隙匹配。
-    </p>
+  <div class="relative rounded-xl overflow-hidden bg-slate-900/60">
+    <img 
+      src="https://ooo.0x0.ooo/2023/03/31/21lRS.png" 
+      class="absolute inset-0 w-full h-full object-cover opacity-60"
+    />
+    <div class="relative p-4 backdrop-blur-sm bg-gradient-to-r from-slate-900/80 to-slate-800/40">
+      <h4 class="font-bold">典型 PEC 器件结构</h4>
+      <p class="text-sm mt-2 opacity-90">
+        光阳极/光阴极吸收太阳光产生光生载流子，在电解质中完成水分解反应；常见体系包括金属氧化物、III-V 半导体与钙钛矿叠层等。
+      </p>
+      <p class="text-sm mt-2 opacity-80">
+        当前研究重点在于提高光吸收与催化活性，同时兼顾长期稳定性与低成本封装，使 PEC 有望在分布式“光照即产氢”场景中落地。
+      </p>
+      <p class="text-xs mt-2 opacity-70">
+        图：典型光电化学水分解装置示意。
+      </p>
+    </div>
   </div>
-  </div>
+</div>
 
 </div>
 
@@ -645,18 +473,9 @@ transition: slide-up
 
 <v-clicks>
 
-- **高端电解水体系**  
-  - 低温：ALK / PEM / AEM 通过优化催化剂和膜电极组件 (MEA)，将能耗压低到 **50–55 kWh/kg H₂**，电流密度可达 2–3 A/cm²。  
-  - 高温 SOEC：在 700–850°C 余热条件下运行，综合电耗可降至 **30–40 kWh/kg H₂**，适合与钢铁、水泥等工业余热耦合。  
-- **海水直接电解**  
-  - 通过疏水膜、相变迁移等结构，将海水在电极侧转化为“原位淡水层”，显著抑制 Cl⁻ 腐蚀与结垢。  
-  - 研究报道稳定运行时间已超过 **1000 h**，为“海上风电 + 海水制氢”奠定基础。  
-- **光电化学 (PEC) 与光催化**  
-  - 利用半导体吸收太阳光直接驱动水分解，当前 STH 效率约 **5–12%**，实验室装置已突破 **10%**。  
-  - 通过钙钛矿叠层和 AI/DFT 材料筛选，有望在未来实现 >15–20% 的商业化门槛。  
-- **生物质与负排放制氢**  
-  - 生物质气化制氢效率可达 **40–60%**，与 BECCS 结合有潜在“负排放”能力。  
-  - 适合农业废弃物资源化与区域能源系统耦合。  
+ - **高端电解水体系 (ALK / PEM / AEM / SOEC)**：从常温到高温电解，目标是把能耗压到 30–55 kWh/kg H₂，并在 MW–GW 级保持高电流密度与长寿命。  
+ - **海水直接电解**：利用疏水膜和相变迁移等结构，在电极侧形成“原位淡水层”，抑制 Cl⁻ 腐蚀与结垢，实验室与中试装置已实现 >1000 h 稳定运行。  
+ - **光电化学 (PEC) 与光催化**：半导体吸光驱动水分解，当前 STH 约 5–12%，实验室装置接近 10%，商业化通常认为需 >15–20%。  
 
 </v-clicks>
 
@@ -674,22 +493,24 @@ class: text-left
 
 <v-clicks>
 
-- **日本 Fukushima FH2R：ALK 绿氢示范**  
-  - 10 MW 级碱性电解槽，配套 20 MW 太阳能和储能系统，通过 AI 调度实现宽负荷运行。  
-  - 验证了 ALK 在可再生能源波动条件下的长期稳定性和高纯氢输出。  
-- **德国 Shell Refhyne：PEM 工业应用**  
-  - 10 MW PEM 装置服务于莱茵兰炼油厂，并提供电网调频服务，规划扩展到 100 MW 级。  
-  - 展示了质子交换膜技术在高压、快速调节场景中的优势。  
-- **AEM 新秀：Enapter 与 EVOLOH + GS E&C**  
-  - Enapter 推出模块化 AEM 电解槽，从 kW 扩展到 MW 级，为分布式与集中式项目提供标准化积木。  
-  - EVOLOH 与 GS E&C 合作开发大规模 AEM 工厂，目标是以低成本非贵金属催化剂实现高电流密度运行。  
-- **离岸制氢：Lhyfe Sealhyfe 平台**  
-  - 在漂浮式风机旁部署 1 MW PEM 制氢装置，验证“近源制氢 + 管道输送”的技术与运维可行性。  
-  - 为未来更大规模的“海上制氢岛”提供工程经验。  
+ - **日本 Fukushima FH2R (ALK)**：10 MW 级碱性电解槽 + 20 MW 光伏与储能，通过 AI 调度验证 ALK 在波动电源下的长期稳定运行。  
+ - **德国 Shell Refhyne (PEM)**：10 MW PEM 为莱茵兰炼油厂供氢并参与电网调频，规划扩展至 100 MW 级。  
+ - **Enapter / EVOLOH + GS E&C (AEM)**：模块化 AEM 从 kW 扩展到 MW，目标是用非贵金属催化剂实现高电流密度和低 CAPEX。  
+ - **Lhyfe Sealhyfe 离岸制氢平台**：在漂浮式风机旁布置 1 MW PEM 模块，为未来更大规模“海上制氢岛”积累工程经验。  
 
 </v-clicks>
 
 ::right::
+
+<div class="mt-4">
+  <img 
+    src="https://images.unsplash.com/photo-1487875961445-47a00398c267?q=80&w=1600&auto=format&fit=crop" 
+    class="rounded-lg shadow-lg border border-white/10"
+  />
+  <div class="text-center text-xs opacity-60 mt-2">
+    绿氢工厂与工业电解槽总装示意（Unsplash 自由图片）
+  </div>
+</div>
 
 <div class="mt-6 text-xs opacity-60">
   参考：项目公开资料、IEA 与行业报告；EVOLOH + GS E&C 合作新闻，Lhyfe Sealhyfe 官方发布等。
@@ -698,6 +519,7 @@ class: text-left
 ---
 layout: two-cols
 transition: fade-out
+background: https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?q=80&w=2070&auto=format&fit=crop
 class: text-left
 ---
 
@@ -705,23 +527,15 @@ class: text-left
 
 <v-clicks>
 
-- **低铱/无铱 PEM 电解槽**  
-  - 通过纳米结构和合金设计，将阳极铱用量降低一个数量级以上，同时保持高电流密度和寿命。  
-  - 目标是在保持 2–3 A/cm² 的前提下，将系统 CAPEX 压低到 **300–500 $/kW** 区间。  
-- **高电流密度 AEM 与非贵金属催化剂**  
-  - Ni/Fe 等非贵金属催化体系在 AEM 中已实现 **1–2 A/cm²、>1000 h** 稳定运行。  
-  - 未来方向是提高膜稳定性、降低碱性降解，并实现大规模卷对卷制膜与自动化堆栈装配。  
-- **大规模海水电解**  
-  - 基于相变迁移与多层防护电极结构，将实验室方案放大到 MW 级示范装置。  
-  - 与海上风电、漂浮光伏和海水淡化厂耦合，实现“海上制氢 + 管道回输”一体化系统。  
-- **光电化学与光催化新体系**  
-  - 发展稳定的钙钛矿/Si 叠层 PEC 电极和高效率光催化粉体，实现低成本、分布式“光照即产氢”装置。  
-  - 利用机器学习与高通量计算加速材料筛选，缩短从实验室发现到工程应用的周期。  
+ - **低铱/无铱 PEM 电解槽**：通过纳米结构与合金设计大幅降低阳极铱用量，目标是在 2–3 A/cm² 下把系统 CAPEX 压到 **300–500 $/kW**。  
+ - **高电流密度 AEM 与非贵金属催化剂**：Ni/Fe 等非贵金属体系在 AEM 中已实现 **1–2 A/cm²、>1000 h**，下一步是提升膜稳定性并实现卷对卷制膜与自动化堆栈装配。  
+ - **大规模海水电解**：基于相变迁移和多层防护结构，把实验室方案放大到 MW 级，与海上风电、漂浮光伏和海水淡化耦合，构建“海上制氢 + 管道回输”一体化系统。  
+ - **光电化学与光催化新体系**：发展稳定的钙钛矿/Si 叠层 PEC 和高效率光催化粉体，并用机器学习 + 高通量计算加速材料筛选，缩短从发现到工程应用的周期。  
 
 </v-clicks>
 
   <div class="mt-6 text-xs opacity-60">
-    参考：近年关于 PEM/AEM/海水电解与 PEC 的综述和前沿论文，以及主要设备供应商的技术路线图。
+    参考：近年关于 PEM/AEM/海水电解与 PEC 的综述与前沿论文，以及主要设备供应商的技术路线图。
   </div>
  
   ---
