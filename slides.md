@@ -58,7 +58,30 @@ transition: slide-left
 </div>
 
 ---
-transition: fade-out
+layout: center
+transition: slide-left
+class: text-left
+---
+
+# 全球氢能现状（2025）
+
+<v-clicks>
+
+- **年度需求**：约 1 亿吨 H₂，其中**低排放氢**（绿氢 + 蓝氢）占比 < 1%，但 2024 年起保持约 **10%/年增长**。  
+- **生产结构**：约 **75%** 来自化石燃料蒸汽甲烷重整 (SMR)，煤气化约 15%，工业副产氢 < 5%。  
+- **减排缺口**：IEA 预测，为实现净零情景，2030 年需要 **3,700 万吨低排放氢**，而当前项目仅覆盖目标的约三分之一。  
+- **视觉参考**：课后可查阅 SMR+CCUS 流程图和各类电解水示意图，加深对不同制氢路径的理解。  
+
+</v-clicks>
+
+<div class="mt-6 text-xs opacity-60">
+  数据来源：IEA <i>Global Hydrogen Review 2025</i>，IRENA 氢能报告等公开资料
+</div>
+
+---
+layout: two-cols
+transition: slide-left
+class: text-left
 ---
 
 # 氢的色彩光谱
@@ -94,58 +117,22 @@ transition: fade-out
 
 ---
 layout: center
-class: text-center
-transition: view-transition
----
-
-# 技术全景图
-## The Technology Landscape
-
-<div class="grid grid-cols-2 gap-8 mt-8 text-left max-w-4xl mx-auto">
-  <div v-click class="border p-4 rounded hover:bg-white/5 transition">
-    <h3 class="text-xl font-bold text-blue-400">ALK</h3>
-    <p class="opacity-70">碱性电解水</p>
-    <div class="text-sm mt-2">成熟度: High | 成本: Low</div>
-  </div>
-  <div v-click class="border p-4 rounded hover:bg-white/5 transition">
-    <h3 class="text-xl font-bold text-green-400">PEM</h3>
-    <p class="opacity-70">质子交换膜</p>
-    <div class="text-sm mt-2">成熟度: Medium | 响应: Fast</div>
-  </div>
-  <div v-click class="border p-4 rounded hover:bg-white/5 transition">
-    <h3 class="text-xl font-bold text-purple-400">AEM</h3>
-    <p class="opacity-70">阴离子交换膜</p>
-    <div class="text-sm mt-2">成熟度: Low | 潜力: High</div>
-  </div>
-  <div v-click class="border p-4 rounded hover:bg-white/5 transition">
-    <h3 class="text-xl font-bold text-cyan-400">Seawater</h3>
-    <p class="opacity-70">海水直接电解</p>
-    <div class="text-sm mt-2">成熟度: R&D | 资源: Unlimited</div>
-  </div>
-</div>
-
----
-layout: center
 transition: slide-left
 class: text-left
 ---
 
-# 氢气的制取路线总览
-## From Fossil to Renewable
+# 化石制氢路径对比
 
-<v-clicks>
+| 路径 | 主要反应 | 典型效率 | CO₂ 排放 (kg/kg H₂) | 成本 ($/kg, 2025) | 全球占比 |
+|------|----------|----------|---------------------|-------------------|----------|
+| SMR 灰氢 | $CH_4 + H_2O \\rightleftharpoons CO + 3H_2$ | 70–85% | **9–12** | 1.5–3 | ~75% |
+| SMR+CCUS 蓝氢 | 同上 + CO₂ 捕集 | 70–80% | **< 2** | 2–4 | ~20% |
+| 煤气化 | $C + H_2O \\rightarrow CO + H_2$ | 60–70% | **15–20** | 1–2 | ~15% |
+| 工业副产氢 | 氯碱、焦炉煤气等 | 80%+ | 视工艺而定 | 0.5–2 | <5% |
 
-- **化石能源制氢**  
-  - 蒸汽甲烷重整 (SMR)  
-  - 煤气化 / 焦炉煤气等工业副产氢  
-- **电解水制氢**  
-  - 使用可再生电力 (风、光、水电等) 的 ALK、PEM、AEM、SOEC 等技术  
-- **生物质与生物制氢**  
-  - 生物质气化/重整、暗发酵、光合微生物产氢  
-- **新兴路线**  
-  - 光电化学 (PEC)、光催化分解水等
-
-</v-clicks>
+<div class="mt-4 text-xs opacity-60">
+  数据综合自 IEA <i>Global Hydrogen Review 2025</i> 及相关综述，仅供课堂定量比较使用。
+</div>
 
 ---
 layout: two-cols
@@ -223,7 +210,7 @@ class: text-left
 
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop
+image: https://images.unsplash.com/photo-1582719478250-c89dae4dc85b?q=80&w=2070&auto=format&fit=crop
 transition: slide-left
 class: text-left
 ---
@@ -707,24 +694,28 @@ transition: fade-out
 
 # 参考文献
 
-<div class="text-xs opacity-70 leading-relaxed columns-2 gap-8">
+  <div class="text-xs opacity-70 leading-relaxed columns-2 gap-8">
 
-1. **IRENA**. (2024). *Global Hydrogen Trade Outlook*.
-2. **IEA**. (2025). *Global Hydrogen Review 2025*.
-3. **Nature Energy**. (2023). *Stable anion exchange membranes*.
-4. **Joule**. (2022). *Direct seawater electrolysis*.
-5. **NREL**. (2024). *Offshore Wind for Hydrogen*.
-6. **Springer**. (2025). *Green hydrogen production and deployment*.
-7. **Energies Media**. (2025). *Hydrogen Energy in 2025*.
-8. **ScienceDirect**. (2025). *Advancements in green hydrogen production*.
-9. **Newswise**. (2025). *Recent Progress of Green Hydrogen Production Technology*.
-10. **PMC**. (2025). *Recent Advances in Green Hydrogen Production by Electrolyzing Water*.
-11. **Yahoo Finance**. (2025). *2025 Green Hydrogen Market Technology Landscape*.
-12. **StartUs Insights**. (2024). *Top 10 Hydrogen Trends in 2025*.
-13. **Airswift**. (2025). *Top US green hydrogen projects for 2025*.
-14. **ACS Catalysis**. (2024). *Transition metal-based catalysts*.
-
-</div>
+  1. **IRENA**. (2024). *Global Hydrogen Trade Outlook*.
+  2. **IEA**. (2025). *Global Hydrogen Review 2025*.
+  3. **Nature Energy**. (2023). *Stable anion exchange membranes*.
+  4. **Joule**. (2022). *Direct seawater electrolysis*.
+  5. **NREL**. (2024). *Offshore Wind for Hydrogen*.
+  6. **Springer**. (2025). *Green hydrogen production and deployment*.
+  7. **Energies Media**. (2025). *Hydrogen Energy in 2025*.
+  8. **ScienceDirect**. (2025). *Advancements in green hydrogen production*.
+  9. **Newswise**. (2025). *Recent Progress of Green Hydrogen Production Technology*.
+  10. **PMC**. (2025). *Recent Advances in Green Hydrogen Production by Electrolyzing Water*.
+  11. **Yahoo Finance**. (2025). *2025 Green Hydrogen Market Technology Landscape*.
+  12. **StartUs Insights**. (2024). *Top 10 Hydrogen Trends in 2025*.
+  13. **Airswift**. (2025). *Top US green hydrogen projects for 2025*.
+  14. **ACS Catalysis**. (2024). *Transition metal-based catalysts*.
+  15. **IRENA**. (2025). *Green hydrogen for industrial decarbonisation (Central Asia & South Caucasus)*.
+  16. **Frontiers in Membrane Science and Technology**. (2025). *Grand challenges in anion exchange membrane energy applications*.
+  17. **WIREs Energy and Environment**. (2025). *Advancements in Electrode Development for Water Electrolysis*.
+  18. **Fuel Cells Works**. (2025). *GS E&C Enters Hydrogen Tech Market with EVOLOH AEM Electrolysis*.
+ 
+  </div>
 
 <div class="absolute bottom-4 right-4 text-xs opacity-30">
   Powered by Slidev & Antigravity
