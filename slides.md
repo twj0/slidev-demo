@@ -61,6 +61,7 @@ transition: slide-left
 layout: center
 transition: slide-left
 class: text-left
+background: https://www.nrel.gov/images/libraries/news/program/2024/20240715-offshore-wind-turbines-offer-path-for-clean-hydrogen-production-84771.jpg?sfvrsn=60d0f078_0
 ---
 
 # 全球氢能现状（2025）
@@ -70,7 +71,8 @@ class: text-left
 - **年度需求**：约 1 亿吨 H₂，其中**低排放氢**（绿氢 + 蓝氢）占比 < 1%，但 2024 年起保持约 **10%/年增长**。  
 - **生产结构**：约 **75%** 来自化石燃料蒸汽甲烷重整 (SMR)，煤气化约 15%，工业副产氢 < 5%。  
 - **减排缺口**：IEA 预测，为实现净零情景，2030 年需要 **3,700 万吨低排放氢**，而当前项目仅覆盖目标的约三分之一。  
-- **视觉参考**：课后可查阅 SMR+CCUS 流程图和各类电解水示意图，加深对不同制氢路径的理解。  
+- **视觉参考**：SMR+CCUS 流程图、电解水装置结构示意和海水电解电极设计等图像，有助于直观理解不同制氢路径在流程与材料上的差异。  
+- **区域差异**：欧盟、日本更依赖进口绿氢与合成燃料，中国、中东等地区则更多利用本地可再生能源与化石资源组合（IEA, IRENA 2025）。  
 
 </v-clicks>
 
@@ -131,7 +133,7 @@ class: text-left
 | 工业副产氢 | 氯碱、焦炉煤气等 | 80%+ | 视工艺而定 | 0.5–2 | <5% |
 
 <div class="mt-4 text-xs opacity-60">
-  数据综合自 IEA <i>Global Hydrogen Review 2025</i> 及相关综述，仅供课堂定量比较使用。
+  数据综合自 IEA <i>Global Hydrogen Review 2025</i> 及相关综述，仅供定量比较参考。
 </div>
 
 ---
@@ -173,8 +175,8 @@ class: text-left
     蒸汽甲烷重整 + CCUS 工艺流程简图 (SMR-CCS，ResearchGate 图示)
   </div>
   <div class="mt-3 text-xs opacity-70 leading-relaxed">
-    课堂练习：假设整体反应为 $CH_4 + 2H_2O \\rightarrow CO_2 + 4H_2$，推导每 kg H₂ 理论 CO₂ 生成量，
-    并与工程经验值 9–10 kg CO₂/kg H₂ 比较差异。
+    整体反应可近似写为 $CH_4 + 2H_2O \\rightarrow CO_2 + 4H_2$，据此可估算每 kg H₂ 对应的 CO₂ 理论生成量，
+    与工程经验值 9–10 kg CO₂/kg H₂ 基本一致，有助于理解灰氢与蓝氢在生命周期排放上的差别。
   </div>
 </div>
 
@@ -234,7 +236,7 @@ class: text-left
 - **简化能耗估算 (示例)**  
   - 以 2.0 V 运行、法拉第效率 100% 计，1 kg H₂ 需电能约 **53–55 kWh**。  
   - 以上限热值 $LHV \\approx 33.3\\,\\text{kWh/kg}$ 计，电解效率约为 **60–65%**。  
-  - 课堂可要求学生按 1.8/2.2 V 等不同电压重新计算能耗与效率。  
+  - 不同运行电压下的能耗与效率关系可用同样方法估算，用于评估工艺优化与电价假设对 LCOH 的影响。  
 
 </v-clicks>
 
@@ -273,7 +275,7 @@ class: text-left
     生物质气化制氢工艺流程示意 (ResearchGate 图示)
   </div>
   <div class="text-center text-xs opacity-70 mt-1">
-    可作为课后延伸阅读主题：生物质氢能与农业废弃物资源化与能效分析。
+    生物质氢能常与农业废弃物资源化和区域能源系统规划结合，是当前跨学科研究的一个重要方向。
   </div>
 </div>
 
@@ -350,6 +352,7 @@ transition: slide-left
 ---
 layout: two-cols
 transition: slide-left
+background: https://www.researchgate.net/publication/339946556/figure/fig1/AS:869574543147008@1584334135629/Experimental-setup-the-high-pressure-characterization-of-PEM-electrolyzer-stack.jpg
 ---
 
 # 质子交换膜 (PEM)
@@ -509,6 +512,7 @@ transition: slide-left
 ---
 layout: two-cols
 transition: fade-out
+background: https://assets.newatlas.com/dims4/default/13aba13/2147483647/strip/true/crop/1425x748+0+160/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F2a%2Fab%2F7631d2aa427b8c10bc183ff1c2cd%2Fscreenshot-2022-12-16-at-1.21.02%20pm.png&na.image_optimisation=0
 ---
 
 # 海水直接电解
@@ -625,7 +629,7 @@ transition: fade-out
       利用机器学习 (ML) 和密度泛函理论 (DFT) 筛选数万种钙钛矿材料，寻找最佳带隙匹配。
     </p>
   </div>
-</div>
+  </div>
 
 </div>
 
@@ -636,63 +640,92 @@ class: text-center
 transition: slide-up
 ---
 
-# 未来展望
-## Future Outlook
-路线图与结语
-
----
-transition: slide-left
----
-
-# 2025-2050 技术路线图
-
-<div class="relative mt-10 mx-10">
-  <!-- Line -->
-  <div class="absolute left-4 top-0 bottom-0 w-1 bg-gray-700"></div>
-
-  <!-- Nodes -->
-  <div v-click class="relative pl-12 mb-8">
-    <div class="absolute left-2 top-2 w-5 h-5 bg-green-500 rounded-full -translate-x-1/2 border-4 border-gray-900"></div>
-    <h3 class="text-xl font-bold text-green-400">2025: 规模化起步</h3>
-    <p class="opacity-70">ALK 单槽 10MW+; 示范项目遍地开花; 成本 ~$4-5/kg。</p>
-  </div>
-
-  <div v-click class="relative pl-12 mb-8">
-    <div class="absolute left-2 top-2 w-5 h-5 bg-blue-500 rounded-full -translate-x-1/2 border-4 border-gray-900"></div>
-    <h3 class="text-xl font-bold text-blue-400">2030: 成本拐点</h3>
-    <p class="opacity-70">绿氢成本降至 $2-3/kg (与蓝氢持平); AEM 开始商业化; 离岸制氢试点。</p>
-  </div>
-
-  <div v-click class="relative pl-12">
-    <div class="absolute left-2 top-2 w-5 h-5 bg-purple-500 rounded-full -translate-x-1/2 border-4 border-gray-900"></div>
-    <h3 class="text-xl font-bold text-purple-400">2050: 深度脱碳</h3>
-    <p class="opacity-70">绿氢成为主力能源; 海水直接电解普及; 全球氢能贸易网络成熟。</p>
-  </div>
-</div>
-
----
-layout: center
-class: text-center
-transition: fade-out
----
-
-# 结语
-
-<div class="text-3xl font-serif italic mb-8">
-"氢能不是万能药，但没有氢能，净零排放将是空谈。"
-</div>
+# 先进制氢工艺总览
+## Advanced Hydrogen Production
 
 <v-clicks>
 
-- **产业界**: 致力于降本增效 (Scale-up)。
-- **学术界**: 致力于突破材料极限 (Innovation)。
-- **政策**: 需要持续的碳价机制支持。
+- **高端电解水体系**  
+  - 低温：ALK / PEM / AEM 通过优化催化剂和膜电极组件 (MEA)，将能耗压低到 **50–55 kWh/kg H₂**，电流密度可达 2–3 A/cm²。  
+  - 高温 SOEC：在 700–850°C 余热条件下运行，综合电耗可降至 **30–40 kWh/kg H₂**，适合与钢铁、水泥等工业余热耦合。  
+- **海水直接电解**  
+  - 通过疏水膜、相变迁移等结构，将海水在电极侧转化为“原位淡水层”，显著抑制 Cl⁻ 腐蚀与结垢。  
+  - 研究报道稳定运行时间已超过 **1000 h**，为“海上风电 + 海水制氢”奠定基础。  
+- **光电化学 (PEC) 与光催化**  
+  - 利用半导体吸收太阳光直接驱动水分解，当前 STH 效率约 **5–12%**，实验室装置已突破 **10%**。  
+  - 通过钙钛矿叠层和 AI/DFT 材料筛选，有望在未来实现 >15–20% 的商业化门槛。  
+- **生物质与负排放制氢**  
+  - 生物质气化制氢效率可达 **40–60%**，与 BECCS 结合有潜在“负排放”能力。  
+  - 适合农业废弃物资源化与区域能源系统耦合。  
 
 </v-clicks>
 
+<div class="mt-6 text-xs opacity-60">
+  数据来源：IEA、IRENA 相关氢能技术报告及多篇电解水/PEC/生物质制氢综述。
+</div>
+
+---
+layout: two-cols
+transition: slide-left
+class: text-left
 ---
 
-# 参考文献
+# 世界领军制氢项目与企业
+
+<v-clicks>
+
+- **日本 Fukushima FH2R：ALK 绿氢示范**  
+  - 10 MW 级碱性电解槽，配套 20 MW 太阳能和储能系统，通过 AI 调度实现宽负荷运行。  
+  - 验证了 ALK 在可再生能源波动条件下的长期稳定性和高纯氢输出。  
+- **德国 Shell Refhyne：PEM 工业应用**  
+  - 10 MW PEM 装置服务于莱茵兰炼油厂，并提供电网调频服务，规划扩展到 100 MW 级。  
+  - 展示了质子交换膜技术在高压、快速调节场景中的优势。  
+- **AEM 新秀：Enapter 与 EVOLOH + GS E&C**  
+  - Enapter 推出模块化 AEM 电解槽，从 kW 扩展到 MW 级，为分布式与集中式项目提供标准化积木。  
+  - EVOLOH 与 GS E&C 合作开发大规模 AEM 工厂，目标是以低成本非贵金属催化剂实现高电流密度运行。  
+- **离岸制氢：Lhyfe Sealhyfe 平台**  
+  - 在漂浮式风机旁部署 1 MW PEM 制氢装置，验证“近源制氢 + 管道输送”的技术与运维可行性。  
+  - 为未来更大规模的“海上制氢岛”提供工程经验。  
+
+</v-clicks>
+
+::right::
+
+<div class="mt-6 text-xs opacity-60">
+  参考：项目公开资料、IEA 与行业报告；EVOLOH + GS E&C 合作新闻，Lhyfe Sealhyfe 官方发布等。
+</div>
+
+---
+layout: two-cols
+transition: fade-out
+class: text-left
+---
+
+# 下一代制氢方向与研发热点
+
+<v-clicks>
+
+- **低铱/无铱 PEM 电解槽**  
+  - 通过纳米结构和合金设计，将阳极铱用量降低一个数量级以上，同时保持高电流密度和寿命。  
+  - 目标是在保持 2–3 A/cm² 的前提下，将系统 CAPEX 压低到 **300–500 $/kW** 区间。  
+- **高电流密度 AEM 与非贵金属催化剂**  
+  - Ni/Fe 等非贵金属催化体系在 AEM 中已实现 **1–2 A/cm²、>1000 h** 稳定运行。  
+  - 未来方向是提高膜稳定性、降低碱性降解，并实现大规模卷对卷制膜与自动化堆栈装配。  
+- **大规模海水电解**  
+  - 基于相变迁移与多层防护电极结构，将实验室方案放大到 MW 级示范装置。  
+  - 与海上风电、漂浮光伏和海水淡化厂耦合，实现“海上制氢 + 管道回输”一体化系统。  
+- **光电化学与光催化新体系**  
+  - 发展稳定的钙钛矿/Si 叠层 PEC 电极和高效率光催化粉体，实现低成本、分布式“光照即产氢”装置。  
+  - 利用机器学习与高通量计算加速材料筛选，缩短从实验室发现到工程应用的周期。  
+
+</v-clicks>
+
+  <div class="mt-6 text-xs opacity-60">
+    参考：近年关于 PEM/AEM/海水电解与 PEC 的综述和前沿论文，以及主要设备供应商的技术路线图。
+  </div>
+ 
+  ---
+  # 参考文献
 
   <div class="text-xs opacity-70 leading-relaxed columns-2 gap-8">
 
