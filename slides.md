@@ -145,8 +145,6 @@ transition: slide-left
 
 # ALK 的规模化之路
 
-**中国供应链的统治力**
-
 <v-clicks>
 
 - **单槽规模**: 从 5 MW 迈向 **10-20 MW** (2025 主流)。
@@ -157,6 +155,10 @@ transition: slide-left
   - **Zirfon 隔膜**: 气密性与离子传导率的双重提升 [17]。
 
 </v-clicks>
+
+<div class="mt-3 text-xs opacity-60">
+  数据与表述综合来自 IEA Global Hydrogen Review 2025、IEA 2024 报告以及关于碱性电解的综述文献 (Lee et al., 2024; Brauns et al., 2024; Wang et al., 2025)。
+</div>
 
 <br>
 
@@ -182,7 +184,12 @@ background: https://www.researchgate.net/publication/339946556/figure/fig1/AS:86
   - **动态响应**: < 1秒 (0-100% 负载)，完美适配风光波动 [2]。
   - **系统寿命**: > 50,000 小时。
 - **优势**: 结构紧凑，占地面积小，适合空间受限场景。
+
 </v-clicks>
+
+<div class="mt-3 text-xs opacity-60">
+  性能参数与应用场景参考自  DOE (2024)《Hydrogen Shot: Water Electrolysis Technology Assessment》及 Wang C. & Feng L. (2024) 等 PEM 电解综述文献。
+</div>
 
 ::right::
 
@@ -196,46 +203,6 @@ background: https://www.researchgate.net/publication/339946556/figure/fig1/AS:86
   />
   <div class="text-center text-xs opacity-50 mt-2">PEM 实验装置示意图</div>
 </div>
-
----
-topic: pem
-transition: fade-out
----
-
-# PEM 的“贵族”烦恼
-
-**铱 (Iridium) 的稀缺性**
-
-<div class="flex gap-8 mt-8 items-center">
-  <div class="w-1/2">
-    <v-clicks>
-      <div class="mb-4">
-        <h3 class="font-bold text-red-400">资源瓶颈</h3>
-        <p>铱是铂族金属副产物，年产量仅 ~7-9 吨。</p>
-      </div>
-      <div class="mb-4">
-        <h3 class="font-bold text-yellow-400">成本占比</h3>
-        <p>膜电极 (MEA) 占电解槽成本的 40% 以上。</p>
-      </div>
-      <div class="mb-4">
-        <h3 class="font-bold text-green-400">解决方案</h3>
-        <p>低铱/无铱催化剂研发 (目标: < 0.1 mg/cm²)。</p>
-      </div>
-    </v-clicks>
-  </div>
-  <div class="w-1/2">
-    <div class="bg-gray-800 p-6 rounded-xl text-center">
-      <div class="text-5xl font-mono mb-2">$1,200</div>
-      <div class="text-sm opacity-60">PEM 系统当前 CAPEX (/kW)</div>
-      <div class="h-px bg-gray-600 my-4"></div>
-      <div class="text-5xl font-mono mb-2 text-green-400">$500</div>
-      <div class="text-sm opacity-60">2030 目标 CAPEX (/kW)</div>
-    </div>
-  </div>
-</div>
-
-
-
 
 ---
 layout: image-right
@@ -259,6 +226,10 @@ transition: slide-left
   - **商业化进程**: Enapter 等公司已推出 MW 级 AEM 模块，目标 LCOH < $2/kg [18]。
 
 </v-clicks>
+
+<div class="mt-3 text-xs opacity-60">
+  AEM 相关机理与最新进展来自 Li Y. et al. (2025)、Wang C. et al. (2025)、Mandal P. et al. (2025) 等阴离子交换膜水电解综述文献。
+</div>
 
 ---
 layout: two-cols
@@ -412,13 +383,107 @@ class: text-center
   </div>
 </div>
 
-<div class="mt-12 text-sm opacity-70">
-  "氢能不是唯一的答案，但它是净零排放拼图中不可或缺的一块。" — IEA Global Hydrogen Review 2025
+  <div class="mt-12 text-sm opacity-70">
+    "氢能不是唯一的答案，但它是净零排放拼图中不可或缺的一块。" — IEA Global Hydrogen Review 2025
+  </div>
+ 
+---
+layout: two-cols
+topic: biohydrogen
+transition: slide-left
+background: https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1600&auto=format&fit=crop
+class: text-left
+---
+
+# 生物制氢概览
+**暗发酵 / 光发酵 / 微藻**
+
+<v-clicks>
+
+- **暗发酵**:
+  - 利用有机废水、农林废弃物，在厌氧条件下产氢 + 有机酸。
+  - 典型产氢速率 1–4 mol H₂/mol 六碳底物 [8][10]。
+- **光发酵**:
+  - 紫色非硫细菌 (PNSB) 在光照下进一步转化有机酸产氢。
+  - 可与暗发酵串联，提高总体 H₂ 收率 [8][10]。
+- **微藻制氢**:
+  - 特定缺硫/缺氧条件下，绿藻改变代谢途径，经氢化酶释放 H₂。
+  - 接近“光生物制氢”，但对环境条件极为敏感 [8][10]。
+
+</v-clicks>
+
+::right::
+
+<div class="ml-4 mt-8">
+  <img 
+    src="https://pub.mdpi-res.com/sustainability/sustainability-15-12641/article_deploy/html/images/sustainability-15-12641-g001.png?1692611312" 
+    class="rounded-lg shadow-lg border border-white/20"
+  />
+  <div class="text-center text-xs opacity-60 mt-2">
+    生物氢来源与生产路径示意（改绘自 Sustainability 15, 12641）
+  </div>
 </div>
 
 ---
 layout: center
+topic: biohydrogen
+transition: slide-left
+---
+
+# 生物制氢：优势、局限与定位
+
+<v-clicks>
+
+- **优势**:
+  - 以有机废水/固废为底物，兼具污染减排 + 能量回收功能。
+  - 条件温和、设施相对简单，适合中小规模应用 [8][10]。
+- **局限**:
+  - H₂ 收率和体积产气速率普遍偏低，难以与电解/化石路线竞争。
+  - 生物体系复杂，对温度、pH、底物组成高度敏感，放大效应显著。
+- **适用定位**:
+  - 更适合作为城市/产业废水协同治理的补充技术。
+  - 在 2030 年前难以成为大宗氢源主力，更接近“分布式+环保”路线 [8][10]。
+
+</v-clicks>
+
+---
+layout: center
+topic: summary
+transition: slide-up
+class: text-left
+---
+
+# 制氢技术路线对照总结 (2025)
+
+| 技术路线 | 典型效率* | TRL | CAPEX ($/kW) | 适用场景 | 关键瓶颈 |
+| :--- | :---: | :---: | :---: | :--- | :--- |
+| ALK | 70–80% | 9 | 300–600 | 稳态大规模制氢 | 动态响应慢、气体交叉 |
+| PEM | 65–75% | 8–9 | 800–1200 | 风光耦合、车站供氢 | 铱资源稀缺、膜成本 |
+| SOEC | 80–90% | 6–7 | 800–1200 | 余热/核能耦合、e-fuels | 高温材料与热循环降解 |
+| AEM | 65–75% | 5–6 | 500–700 | 潜在低成本绿氢 | 膜稳定性、寿命数据有限 |
+| 海水电解 | ~60–70% | 3–5 | 待定 | 近海/离岸制氢 | Cl⁻ 腐蚀、CER 竞争反应 |
+| 光催化/PEC | 5–12% STH | 2–4 | 实验室 | 远期分布式制氢 | 效率与稳定性不足 |
+| 生物制氢 | 低–中 | 3–5 | 中等 | 废水协同治理 | 产率低、工程可控性差 |
+
+<div class="mt-6 flex justify-center">
+  <img 
+    src="https://www.researchgate.net/publication/350824503/figure/tbl3/AS:1054215367585793@1628355938547/Comparisons-of-hydrogen-production-technologies.png" 
+    class="h-52 rounded-lg shadow-lg border border-white/20"
+  />
+</div>
+<div class="text-center text-xs opacity-60 mt-2">
+  各类制氢技术效率与成本比较示意（改绘自制氢技术比较综述）
+</div>
+
+<div class="mt-4 text-xs opacity-60">
+  *数据综合自 IEA Global Hydrogen Review 2025、IRENA 以及近期综述文献 [1][2][8][10]，表示典型区间，具体取值依工况与系统边界而定。*
+</div>
+
+---
+layout: two-cols
+topic: references
 transition: fade-out
+background: https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?q=80&w=2070&auto=format&fit=crop
 class: text-left
 ---
 
