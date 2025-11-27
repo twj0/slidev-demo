@@ -239,7 +239,7 @@ transition: fade-out
 
 ---
 layout: image-right
-image: https://www.researchgate.net/publication/375489108/figure/fig1/AS:11431281204076525@1699575640514/Schematic-of-anion-exchange-membrane-AEM-water-electrolyzer-membrane-electrode.jpg
+image: http://www.aem-h2.com/assets/img/index_about.gif
 topic: aem
 transition: slide-left
 ---
@@ -274,7 +274,9 @@ background: https://assets.newatlas.com/dims4/default/13aba13/2147483647/strip/t
 <v-clicks>
 
 - **背景**: 传统电解消耗大量高纯水 (9kg 水 / 1kg 氢)，海水淡化增加成本与复杂性。
-- **挑战**: 海水中复杂的离子成分 (Cl⁻, Mg²⁺, Ca²⁺) 导致阳极腐蚀与结垢 [4]。
+- **挑战**:
+  - 海水中复杂的离子成分 (Cl⁻, Mg²⁺, Ca²⁺) 导致阳极腐蚀与结垢 [4]。
+  - 析氯反应 (CER) 与析氧反应 (OER) 竞争，可能产生有毒氯气。
 - **策略**:
   - **物理阻隔**: 利用疏水膜只允许水蒸气通过 (膜蒸馏耦合)。
   - **化学阻隔**: 在电极表面构建抗腐蚀层 (如 NiFe-LDH) [10]。
@@ -285,7 +287,7 @@ background: https://assets.newatlas.com/dims4/default/13aba13/2147483647/strip/t
 
 <div class="ml-4 mt-8">
   <img 
-    src="https://www.science.org/do/10.1126/science.adh8151/abs/_20230317_NID_seawater.jpg" 
+    src="https://www.scu.edu.cn/__local/0/DF/2E/B78DBF3145185043519074F0643_A8B4469A_5C888.jpg" 
     class="rounded-lg shadow-lg border border-white/20"
   />
   <div class="text-center text-xs opacity-60 mt-2">
