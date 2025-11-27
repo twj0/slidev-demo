@@ -245,7 +245,7 @@ transition: fade-out
 </div>
 
 <div class="mt-4 text-xs opacity-60">
-  数据与判断综合自 IEA Global Hydrogen Review 2025 及 <code>refs.md</code> 中 DOE (2024) 和 PEM 电解综述文献。
+  数据与判断综合自 IEA Global Hydrogen Review 2025 与 DOE (2024) 和 PEM 电解综述文献。
 </div>
 
 ---
@@ -318,7 +318,7 @@ class: text-left
 </div>
 
 <div class="mt-4 text-xs opacity-60">
-  内容与判断参考 <code>refs.md</code> 中 AEM 相关综述与技术评估文献 (Li Y., Wang C., Mandal P., Vincent I. 等)。
+  内容与判断参考 AEM 相关综述与技术评估文献 (Li Y., Wang C., Mandal P., Vincent I. 等)。
 </div>
 
 ---
