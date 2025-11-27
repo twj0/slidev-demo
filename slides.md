@@ -166,11 +166,11 @@ transition: slide-left
   ⚠️ <b>挑战:</b> 动态响应较慢，冷启动时间长，难以完美跟随风光剧烈波动。
 </div>
 
----
+ ---
 layout: two-cols
 topic: pem
 transition: slide-left
-background: https://www.researchgate.net/publication/339946556/figure/fig1/AS:869574543147008@1584334135629/Experimental-setup-the-high-pressure-characterization-of-PEM-electrolyzer-stack.jpg
+background: https://www.fomtechnologies.com/wp-content/uploads/84453.jpg
 ---
 
 # 质子交换膜 (PEM)
@@ -181,7 +181,7 @@ background: https://www.researchgate.net/publication/339946556/figure/fig1/AS:86
 - **核心**: 固态聚合物电解质 (Nafion 膜)，工作温度 50-80°C。
 - **性能指标**:
   - **电流密度**: 2-3 A/cm² (是 ALK 的 4-5 倍)。
-  - **动态响应**: < 1秒 (0-100% 负载)，完美适配风光波动 [2]。
+  - **动态响应**: 小于 1 秒 (0-100% 负载)，完美适配风光波动 [2]。
   - **系统寿命**: > 50,000 小时。
 - **优势**: 结构紧凑，占地面积小，适合空间受限场景。
 
@@ -202,6 +202,50 @@ background: https://www.researchgate.net/publication/339946556/figure/fig1/AS:86
     class="rounded-lg bg-white p-2"
   />
   <div class="text-center text-xs opacity-50 mt-2">PEM 实验装置示意图</div>
+</div>
+
+---
+topic: pem
+transition: fade-out
+---
+
+# PEM 的“贵族”烦恼
+
+**铱 (Iridium) 的稀缺性与成本压力**
+
+<div class="flex gap-8 mt-8 items-center">
+  <div class="w-1/2">
+    <v-clicks>
+      <div class="mb-4">
+        <h3 class="font-bold text-red-400 mb-1">资源瓶颈</h3>
+        <p class="text-sm opacity-90">铱是铂族金属的副产物，年产量仅 ~7-9 吨，难以支撑数百 GW 级 PEM 产能。</p>
+      </div>
+      <div class="mb-4">
+        <h3 class="font-bold text-yellow-400 mb-1">成本占比</h3>
+        <p class="text-sm opacity-90">膜电极 (MEA) 占电解槽成本的 40% 以上，其中阳极铱催化剂是关键成本来源。</p>
+      </div>
+      <div class="mb-4">
+        <h3 class="font-bold text-green-400 mb-1">缓解路径</h3>
+        <p class="text-sm opacity-90">开发低铱/无铱催化剂 (目标 &lt; 0.1 mg/cm²)、薄膜优化与回收体系，是未来 10 年的研发重点 [2][8]。</p>
+      </div>
+    </v-clicks>
+  </div>
+  <div class="w-1/2">
+    <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/40">
+      <img 
+        src="https://ars.els-cdn.com/content/image/1-s2.0-S0378775317311631-gr1.jpg" 
+        class="w-full h-56 object-cover opacity-85"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+      <div class="absolute bottom-3 left-4 text-xs opacity-80">
+        PEM 电解槽组件与堆栈结构示意
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-4 text-xs opacity-60">
+  数据与判断综合自 IEA Global Hydrogen Review 2025 及 <code>refs.md</code> 中 DOE (2024) 和 PEM 电解综述文献。
 </div>
 
 ---
@@ -229,6 +273,52 @@ transition: slide-left
 
 <div class="mt-3 text-xs opacity-60">
   AEM 相关机理与最新进展来自 Li Y. et al. (2025)、Wang C. et al. (2025)、Mandal P. et al. (2025) 等阴离子交换膜水电解综述文献。
+</div>
+
+---
+topic: aem
+transition: slide-left
+class: text-left
+---
+
+# AEM 的工程挑战与发展方向
+
+<div class="grid grid-cols-3 gap-6 mt-8 text-sm">
+  <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+    <h3 class="font-bold text-amber-300 mb-1">化学稳定性</h3>
+    <p class="opacity-90">季铵阳离子在高 pH 与高温下易发生 Hofmann 消除与亲核取代，导致膜降解与电导率下降。</p>
+  </div>
+  <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+    <h3 class="font-bold text-sky-300 mb-1">界面与电极设计</h3>
+    <p class="opacity-90">膜/电极界面亲水-疏水平衡、气体管理与离子通道设计，决定了高电流密度下的稳定运行窗口。</p>
+  </div>
+  <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+    <h3 class="font-bold text-emerald-300 mb-1">规模化与寿命</h3>
+    <p class="opacity-90">目前大多仍处于 1–100 kW 示范，>10,000 小时稳定运行数据有限，是商业化前的关键里程碑。</p>
+  </div>
+</div>
+
+<div class="grid grid-cols-2 gap-6 mt-6 text-sm">
+  <div class="bg-black/40 border border-white/10 rounded-xl p-4">
+    <h3 class="font-bold text-blue-300 mb-2">材料研发方向</h3>
+    <ul class="list-disc list-inside space-y-1 opacity-90">
+      <li>芳香族主链 + 侧链交联结构，提高碱稳定性与机械强度。</li>
+      <li>探索 OH⁻ 以外的载流离子 (如 $HCO_3^-$ / $CO_3^{2-}$) 降低降解速率。</li>
+      <li>开发非贵金属高活性电极 (NiFe, Co-based) 以支撑低成本愿景 [15–19]。</li>
+    </ul>
+  </div>
+  <div class="bg-black/40 border border-white/10 rounded-xl p-4">
+    <h3 class="font-bold text-purple-300 mb-2">系统与示范工程</h3>
+    <ul class="list-disc list-inside space-y-1 opacity-90">
+      <li>MW 级 AEM 试验电站正在验证部分负荷响应与长期稳定性。</li>
+      <li>与分布式风光 + 工业副产碱性水资源结合，探索低 CAPEX 场景。</li>
+      <li>与 PEM/ALK 混合布置，作为“次主力”路线分担贵金属压力。</li>
+    </ul>
+  </div>
+</div>
+
+<div class="mt-4 text-xs opacity-60">
+  内容与判断参考 <code>refs.md</code> 中 AEM 相关综述与技术评估文献 (Li Y., Wang C., Mandal P., Vincent I. 等)。
 </div>
 
 ---
@@ -453,11 +543,11 @@ class: text-left
 layout: two-cols
 topic: references
 transition: fade-out
-background: https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?q=80&w=2070&auto=format&fit=crop
+background: https://images.unsplash.com/photo-1487875961445-47a00398c267?q=80&w=1600&auto=format&fit=crop
 class: text-left
 ---
 
-# 参考文献
+ # 参考文献
 
 <div class="text-xs opacity-70 leading-relaxed columns-2 gap-8">
 
