@@ -198,10 +198,10 @@ background: https://www.fomtechnologies.com/wp-content/uploads/84453.jpg
     v-motion
     :initial="{ opacity: 0, x: 50 }"
     :enter="{ opacity: 1, x: 0 }"
-    src="https://telegraph.ttwwjj.ddns-ip.net/file/AgACAgUAAyEGAAShY8_eAAOZaSKru18kcVe7Ugjb1lCJ5tx2AAHjAAK2C2sb-AwZVTScd0PSrK8zAQADAgADeQADNgQ.png" 
+    src="https://en.szu.edu.cn/__local/B/A5/85/7CAD345EA2B4099CACFB28A300C_FAE36121_2AA24.png?e=.png" 
     class="rounded-lg bg-white p-2"
   />
-  <div class="text-center text-xs opacity-50 mt-2">PEM 实验装置示意图</div>
+  <div class="text-center text-xs opacity-50 mt-2">质子交换膜水电解结构与传质示意图</div>
 </div>
 
 ---
