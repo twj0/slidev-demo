@@ -358,34 +358,6 @@ class: text-left
   </div>
 </div>
 
----
-layout: center
-topic: future
-transition: slide-up
-background: https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop
-class: text-center
----
-
-# 全球格局与未来展望
-
-<div class="grid grid-cols-3 gap-6 mt-8 text-left">
-  <div class="bg-black/50 p-4 rounded-lg backdrop-blur-sm">
-    <h3 class="text-xl font-bold text-blue-400 mb-2">规模化</h3>
-    <p class="text-sm opacity-90">2025年全球产能突破 1 Mt/yr，中国占据主导地位 (60%+) [2][11]。</p>
-  </div>
-  <div class="bg-black/50 p-4 rounded-lg backdrop-blur-sm">
-    <h3 class="text-xl font-bold text-green-400 mb-2">成本下降</h3>
-    <p class="text-sm opacity-90">随着电解槽制造自动化，预计 2030 年绿氢成本降至 $2-3/kg [1][6]。</p>
-  </div>
-  <div class="bg-black/50 p-4 rounded-lg backdrop-blur-sm">
-    <h3 class="text-xl font-bold text-purple-400 mb-2">应用拓展</h3>
-    <p class="text-sm opacity-90">从化工脱碳向钢铁冶炼、重卡运输及航运燃料 (氨/甲醇) 延伸 [15]。</p>
-  </div>
-</div>
-
-  <div class="mt-12 text-sm opacity-70">
-    "氢能不是唯一的答案，但它是净零排放拼图中不可或缺的一块。" — IEA Global Hydrogen Review 2025
-  </div>
  
 ---
 layout: two-cols
@@ -420,7 +392,7 @@ class: text-left
     class="rounded-lg shadow-lg border border-white/20"
   />
   <div class="text-center text-xs opacity-60 mt-2">
-    生物氢来源与生产路径示意（改绘自 Sustainability 15, 12641）
+    生物氢来源与生产路径示意（ Sustainability 15, 12641）
   </div>
 </div>
 
@@ -466,13 +438,11 @@ class: text-left
 | 生物制氢 | 低–中 | 3–5 | 中等 | 废水协同治理 | 产率低、工程可控性差 |
 
 <div class="mt-6 flex justify-center">
-  <img 
-    src="https://www.researchgate.net/publication/350824503/figure/tbl3/AS:1054215367585793@1628355938547/Comparisons-of-hydrogen-production-technologies.png" 
-    class="h-52 rounded-lg shadow-lg border border-white/20"
-  />
+  
+
 </div>
 <div class="text-center text-xs opacity-60 mt-2">
-  各类制氢技术效率与成本比较示意（改绘自制氢技术比较综述）
+  各类制氢技术效率与成本比较
 </div>
 
 <div class="mt-4 text-xs opacity-60">
