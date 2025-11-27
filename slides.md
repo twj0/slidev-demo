@@ -250,7 +250,7 @@ transition: fade-out
 
 ---
 layout: image-right
-image: http://www.aem-h2.com/assets/img/index_about.gif
+image: https://ars.els-cdn.com/content/image/1-s2.0-S2095495623006721-gr2b.jpg
 topic: aem
 transition: slide-left
 ---
